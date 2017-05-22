@@ -15,29 +15,29 @@ export class Main extends Component {
        * @type {Array}
        */
       navData: [
-        {url: './', name: '홈', back: false},
+        {url: '/', name: '홈', back: false},
         {url: '', name: '개선사항 제안', back: false},
         {url: '', name: '레퍼런스 제안', back: false},
         {url: '', name: '입사 후 포부', back: false}
       ],
       subData: [[], [
         {url: '', name: '뒤로', back: true},
-        {url: './colors', name: '컬러', back: false},
-        {url: './layout', name: '레이아웃', back: false},
-        {url: './elements', name: '구성요소', back: false},
-        {url: './viewer', name: '뷰어', back: false},
-        {url: './effects', name: '이펙트', back: false}
+        {url: 'colors', name: '컬러', back: false},
+        {url: 'layout', name: '레이아웃', back: false},
+        {url: 'elements', name: '구성요소', back: false},
+        {url: 'viewer', name: '뷰어', back: false},
+        {url: 'effects', name: '이펙트', back: false}
       ], [
         {url: '', name: '뒤로', back: true},
-        {url: './ui-cards', name: '카드타입', back: false},
-        {url: './ui-gnb', name: '스크롤 후 상단 GNB 변화', back: false},
-        {url: './ui-banners', name: '모션이 있는 배너', back: false},
-        {url: './ui-library', name: '서재 느낌의 UI', back: false}
+        {url: 'ui-cards', name: '카드타입', back: false},
+        {url: 'ui-gnb', name: '스크롤 후 상단 GNB 변화', back: false},
+        {url: 'ui-banners', name: '모션이 있는 배너', back: false},
+        {url: 'ui-library', name: '서재 느낌의 UI', back: false}
       ], [
         {url: '', name: '뒤로', back: true},
-        {url: './vision-uikit', name: '컴포넌트 디자인 킷', back: false},
-        {url: './vision-best-ux', name: '최고의 UX', back: false},
-        {url: './vision-dev', name: '개발 역량 증진', back: false}
+        {url: 'vision-uikit', name: '컴포넌트 디자인 킷', back: false},
+        {url: 'vision-best-ux', name: '최고의 UX', back: false},
+        {url: 'vision-dev', name: '개발 역량 증진', back: false}
       ]]
     };
     this.handleLoad = this.handleLoad.bind(this);
@@ -48,7 +48,7 @@ export class Main extends Component {
     setTimeout(() => {
       this.state.subData.forEach((item, i) => {
         item.forEach((subitem, z) => {
-          if (window.location.pathname === subitem.url) {
+          if (window.location.pathname === '/' + subitem.url) {
             document.querySelector(`#menu ul:nth-child(${i + 1}) li:nth-child(${z + 1}) a`).className = 'active';
             anime({
               targets: '#menu',
