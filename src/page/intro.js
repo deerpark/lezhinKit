@@ -49,7 +49,7 @@ export class Intro extends Component {
             <figcaption className="fag-lable">{iconTextK}</figcaption>
           </figure>
         </div>
-        <Link to="/colors"><span>{introButtonText}</span></Link>
+        <Link to="./colors"><span>{introButtonText}</span></Link>
       </div>
     );
   }
