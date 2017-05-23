@@ -41,15 +41,6 @@ module.exports = {
       {
         test: /\.(png||svg||gif)$/,
         loader: 'file-loader?name=images/[name].[ext]'
-      },
-      {
-        test: /\.svg$/,
-        loader: 'svg-sprite-loader',
-        include: path.resolve('../src/images'),
-        options: {
-          extract: true,
-          spriteFilename: 'icon.svg'
-        }
       }
     ]
   },

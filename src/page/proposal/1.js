@@ -1,5 +1,4 @@
 import React, {Component} from 'react';
-import lightenseImages from 'lightense-images';
 
 export class Proposal1 extends Component {
   constructor(props) {
@@ -10,7 +9,6 @@ export class Proposal1 extends Component {
     this.handleLoad();
   }
   handleLoad() {
-    lightenseImages('img');
     document.querySelector('body').scrollTop = 0;
   }
   render() {
@@ -22,7 +20,7 @@ export class Proposal1 extends Component {
         <p>레진코믹스만의 컬러 아이덴티티인 레드 컬러계열로 시스템 UI의 컬러 계통을 일관성있게 유지하면 좋을 것 같습니다. 컬러 스왓치 갯수를 최대한 줄일 수록 가독성과 아이덴티티 두마리 토끼를 잡을 수 있습니다.</p>
         <div className="p figset">
           <figure className="wide">
-            <img src="./images/screenshot/color_before.png" alt="" data-background="rgba(0, 0, 0, 0)"/>
+            <a href="./images/screenshot/color_before.png"><img src="./images/screenshot/color_before.png" alt=""/></a>
             <figcaption>기존 레진 서비스 컬러</figcaption>
           </figure>
         </div>
@@ -33,11 +31,11 @@ export class Proposal1 extends Component {
         <p>마블이나 트위터 및 트위치등 굵직한 해외 서비스를 보면 아주 명확하게 잘 지켜지고 있습니다. 트위터는 라이트 블루컬러 트위치는 퍼플처럼 단일 또는 두개의의 컬러를 중점적으로 사용하여 컬러만 봐도 어느 서비스인지 대략 감을 잡을 수도 있습니다.</p>
         <div className="p figset">
           <figure>
-            <img src="./images/screenshot/color_twitch.png" alt="" data-background="rgba(0, 0, 0, 0)"/>
+            <a href="./images/screenshot/color_twitch.png"><img src="./images/screenshot/color_twitch.png" alt=""/></a>
             <figcaption>트위치</figcaption>
           </figure>
           <figure>
-            <img src="./images/screenshot/color_twitter.png" alt="" data-background="rgba(0, 0, 0, 0)"/>
+            <a href="./images/screenshot/color_twitter.png"><img src="./images/screenshot/color_twitter.png" alt=""/></a>
             <figcaption>트위터</figcaption>
           </figure>
         </div>

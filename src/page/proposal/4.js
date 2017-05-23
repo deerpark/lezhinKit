@@ -1,5 +1,4 @@
 import React, {Component} from 'react';
-import lightenseImages from 'lightense-images';
 
 export class Proposal4 extends Component {
   constructor(props) {
@@ -10,7 +9,6 @@ export class Proposal4 extends Component {
     this.handleLoad();
   }
   handleLoad() {
-    lightenseImages('img');
     document.querySelector('body').scrollTop = 0;
   }
   render() {
@@ -53,35 +51,35 @@ export class Proposal4 extends Component {
         <p>한 예로 제가 클리앙 서비스를 자주 이용하는데 직접 테마를 만들어 사용 및 공개도 했었습니다. 현재는 리뉴얼이 되어 업데이트를 해야 사용이 가능합니다만..ㅠ<br/>Stylish 브라우저 확장기능 테마로 아래 링크에서 공개도 했습니다.<br/><a href="https://deerpark.github.io/clienModern/" rel="noopener noreferrer" target="_blank">https://deerpark.github.io/clienModern/</a></p>
         <div className="p figset">
           <figure className="mini">
-            <img src="./images/screenshot/viewer_clien_day.png" alt="" data-background="rgba(0, 0, 0, 0)"/>
+            <a href="./images/screenshot/viewer_clien_day.png"><img src="./images/screenshot/viewer_clien_day.png" alt=""/></a>
             <figcaption>라이트 : main</figcaption>
           </figure>
           <figure className="mini">
-            <img src="./images/screenshot/viewer_clien_day2.png" alt="" data-background="rgba(0, 0, 0, 0)"/>
+            <a href="./images/screenshot/viewer_clien_day2.png"><img src="./images/screenshot/viewer_clien_day2.png" alt=""/></a>
             <figcaption>라이트 : list</figcaption>
           </figure>
           <figure className="mini">
-            <img src="./images/screenshot/viewer_clien_day3.png" alt="" data-background="rgba(0, 0, 0, 0)"/>
+            <a href="./images/screenshot/viewer_clien_day3.png"><img src="./images/screenshot/viewer_clien_day3.png" alt=""/></a>
             <figcaption>라이트 : view</figcaption>
           </figure>
           <figure className="mini">
-            <img src="./images/screenshot/viewer_clien_day4.png" alt="" data-background="rgba(0, 0, 0, 0)"/>
+            <a href="./images/screenshot/viewer_clien_day4.png"><img src="./images/screenshot/viewer_clien_day4.png" alt=""/></a>
             <figcaption>라이트 : write</figcaption>
           </figure>
           <figure className="mini">
-            <img src="./images/screenshot/viewer_clien_night.png" alt="" data-background="rgba(0, 0, 0, 0)"/>
+            <a href="./images/screenshot/viewer_clien_night.png"><img src="./images/screenshot/viewer_clien_night.png" alt=""/></a>
             <figcaption>다크 : main</figcaption>
           </figure>
           <figure className="mini">
-            <img src="./images/screenshot/viewer_clien_night2.png" alt="" data-background="rgba(0, 0, 0, 0)"/>
+            <a href="./images/screenshot/viewer_clien_night2.png"><img src="./images/screenshot/viewer_clien_night2.png" alt=""/></a>
             <figcaption>다크 : list</figcaption>
           </figure>
           <figure className="mini">
-            <img src="./images/screenshot/viewer_clien_night3.png" alt="" data-background="rgba(0, 0, 0, 0)"/>
+            <a href="./images/screenshot/viewer_clien_night3.png"><img src="./images/screenshot/viewer_clien_night3.png" alt=""/></a>
             <figcaption>다크 : view</figcaption>
           </figure>
           <figure className="mini">
-            <img src="./images/screenshot/viewer_clien_night4.png" alt="" data-background="rgba(0, 0, 0, 0)"/>
+            <a href="./images/screenshot/viewer_clien_night4.png"><img src="./images/screenshot/viewer_clien_night4.png" alt=""/></a>
             <figcaption>다크 : write</figcaption>
           </figure>
         </div>

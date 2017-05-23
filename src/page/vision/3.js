@@ -1,6 +1,16 @@
 import React, {Component} from 'react';
 
 export class Vision3 extends Component {
+  constructor(props) {
+    super(props);
+    this.handleLoad = this.handleLoad.bind(this);
+  }
+  componentDidMount() {
+    this.handleLoad();
+  }
+  handleLoad() {
+    document.querySelector('body').scrollTop = 0;
+  }
   render() {
     return (
       <div className="content visi_3">

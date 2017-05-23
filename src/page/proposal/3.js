@@ -1,5 +1,4 @@
 import React, {Component} from 'react';
-import lightenseImages from 'lightense-images';
 import EmbeddedGist from '../../component/gist';
 
 export class Proposal3 extends Component {
@@ -11,7 +10,6 @@ export class Proposal3 extends Component {
     this.handleLoad();
   }
   handleLoad() {
-    lightenseImages('img');
     document.querySelector('body').scrollTop = 0;
   }
   render() {
@@ -21,7 +19,7 @@ export class Proposal3 extends Component {
         <h2>구성요소</h2>
         <h3>버튼</h3>
         <figure className="wide center">
-          <img src="./images/screenshot/elements_buttons.png" alt="" data-background="rgba(0, 0, 0, 0)"/>
+          <a href="./images/screenshot/elements_buttons.png"><img src="./images/screenshot/elements_buttons.png" alt=""/></a>
           <figcaption>레진 서비스 버튼</figcaption>
         </figure>
         <p>다양한 케이스의 버튼들이 존재하겠지만 어느 정도의 규칙이 필요할 것이고 그 가이드에 따라 규격있는 버튼 셋트를 관리해줘야 할 것입니다. 또한 확장성을 고려하려 스타일 및 마크업을 해야겠지요.</p>
@@ -50,7 +48,7 @@ export class Proposal3 extends Component {
         <p>우리는 일반적으로 &lt;element title /&gt; 속성을 간과하기 쉽습니다. 또한 title 속성이 부족할때엔 tooltip을 구현해야할때가 있습니다. 이런 tooltip 사용자에게 유익한 경험을 제공할 수 있게 해줍니다. 또한 접근성에 더 좋은 효과를 가져올 수 있고 디자인적인 레이아웃도 컴팩트하게 해결해 줄때가 많습니다.</p>
         <h4>뱃지/태그</h4>
         <figure className="wide center">
-          <img src="./images/screenshot/elements_badgetag.png" alt="" data-background="rgba(0, 0, 0, 0)"/>
+          <a href="./images/screenshot/elements_badgetag.png"><img src="./images/screenshot/elements_badgetag.png" alt=""/></a>
           <figcaption>레진 서비스 뱃지와 태그</figcaption>
         </figure>
         <p>만화 서비스이기 때문에 뱃지/태그의 종류가 많을걸로 생각됩니다. 현재 레진코믹스의 뱃지/태그를 보면 일관적이거나 통일성이 보이지 않습니다. 사용자에겐 수 많은 만화/소설 리스트가 있을 것이고 그 부분에 대해 일관성/통일성 있는 뱃지/태그는 좋은 사용자 경험을 제공할 수 있을거라 생각됩니다.</p>
